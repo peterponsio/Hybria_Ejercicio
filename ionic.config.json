@@ -1,0 +1,8 @@
+{
+  "name": "HYBRIA",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

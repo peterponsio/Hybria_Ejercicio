@@ -1,0 +1,215 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+
+/* Core CSS required for Ionic components to work properly */
+
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+//fonts 
+@font-face {
+    font-family: "Nokora_Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../src/assets/fonts/Nokora-Regular.ttf") format("opentype");
+}
+
+.alingIconsInputs {
+    height: 5vw;
+    margin-right: 2vw;
+}
+
+.iconAlingEnd {
+    color: #676767;
+    margin-right: -3vw !important;
+    margin-top: 5vh;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5vw;
+    height: auto;
+    width: auto;
+}
+
+.backBtnArrow {
+    height: 10vh;
+    width: 6vw;
+    border: 1px solid;
+}
+
+.helperText {
+    margin-top: 2px !important;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10vh;
+    line-height: 18px;
+    color: #676767;
+}
+
+.contentLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+    margin-top: 10px !important;
+}
+
+.welcomeTitle {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.5vh;
+    line-height: 34px;
+    /* identical to box height */
+    color: #000000;
+    margin-top: -2vh !important;
+}
+
+.accText {
+    margin-top: 1vh !important;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.3vh;
+    color: #949494;
+    margin-top: -2vh !important;
+}
+
+.iconAling {
+    margin-right: 1vw;
+    color: #676767;
+}
+
+.itemInput {
+    margin-top: 3vh !important;
+    margin-left: -5vw;
+}
+
+.iconAlingEnd {
+    margin-right: -2vw !important;
+}
+
+.labelsInputs {
+    margin-left: 6vw
+}
+
+.alingLoginBtn {
+    width: 92%;
+    margin: 0 auto;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10vh;
+    margin-top: 2vh;
+    /* or 49px */
+    color: #FFFFFF !important;
+    margin-top: 5vh !important;
+}
+
+.btnLogin {
+    color: #FFFFFF;
+    --background: #FB6401;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+    --background-activated: var(--background)
+}
+
+.custom_alert {
+    margin-top: 2vh;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.custom_alert_btn {
+    color: #FFFFFF !important;
+    background-color: #FB6401 !important;
+    color: #FB6401;
+    --background: #FB6401;
+    --background-activated: var(--background)
+}
+
+#alertOKBtn {
+    background-color: #FB6401;
+    color: #FFFFFF;
+}
+
+.listSlidesCars {
+    margin-left: -3vh;
+}
+
+.logoLogin {
+    margin-top: 1vw;
+}
+
+.headersFields {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.searchBarContent {
+    width: auto !important;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.searchBarContent>input {
+    width: 80%;
+    height: 6vh;
+    border-radius: 20px 0px 0px 20px;
+    border: none;
+    box-shadow: #000000;
+    padding-left: 10vw;
+}
+
+.btnSearch {
+    background-color: #FB6401;
+    z-index: 1;
+    align-items: center;
+    width: 20% !important;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.btnSearch>img {
+    align-items: center !important;
+    margin-top: 1.3vh;
+    margin-left: 5vw;
+}
+
+.carItems {
+    border-bottom: 1px solid #CBCBCB;
+}

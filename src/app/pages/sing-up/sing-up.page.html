@@ -1,0 +1,116 @@
+<div class="headerContent">
+    <div>
+        <img (click)="onClickBackButton()" src="../../../assets/back_arrow.png" alt="">
+    </div>
+
+    <div>
+
+        <ion-icon class="helperText" slot="start" name="help-circle-outline"></ion-icon>
+
+    </div>
+</div>
+
+
+<ion-content>
+
+    <div class="contentLogin">
+
+        <div class="welcomeTitle">
+            <p>¡Crea una cuenta!</p>
+        </div>
+
+        <div class="accText">
+            <p>Introduce tus datos para inscribirte.</p>
+        </div>
+
+        <div>
+
+            <ion-item class="itemInput">
+
+                <ion-label class="labelsInputs" position="floating">Nombre y Apellidos</ion-label>
+
+                <ion-input>
+                    <ion-icon class="iconAling" slot="start" name="person-outline"></ion-icon>
+                </ion-input>
+
+            </ion-item>
+
+
+            <ion-item class="itemInput">
+
+                <ion-label class="labelsInputs" position="floating">Contraseña</ion-label>
+                <ion-input>
+                    <img class="alingIconsInputs" src="../../../assets/icon/keycapclose.png" alt="">
+                </ion-input>
+
+                <ion-icon class="iconAlingEnd" slot="end" name="eye-outline"></ion-icon>
+
+            </ion-item>
+
+
+            <ion-item class="itemInput">
+
+                <ion-label class="labelsInputs" position="floating">Repite contraseña</ion-label>
+                <ion-input>
+                    <img class="alingIconsInputs" src="../../../assets/icon/keycapclose.png" alt="">
+                </ion-input>
+
+                <ion-icon class="iconAlingEnd" slot="end" name="eye-outline"></ion-icon>
+
+            </ion-item>
+
+            <ion-item class="itemInput">
+
+                <ion-label class="labelsInputs" position="floating">Email</ion-label>
+
+                <ion-input>
+                    <ion-icon class="iconAling" slot="start" name="mail-outline"></ion-icon>
+                </ion-input>
+
+            </ion-item>
+        </div>
+
+        <div class="accTextUploadImg">
+            <p>Sube una foto de perfil</p>
+        </div>
+
+        <div class="listImgs">
+
+            <div>
+                <ion-button class="addImgButton" (click)="addProfilePic()">
+                    <ion-icon slot="icon-only" name="add"></ion-icon>
+                </ion-button>
+
+            </div>
+
+            <div class="addImgButton" *ngFor="let photo of photos">
+                <img [src]="photo" alt="data">
+            </div>
+
+
+        </div>
+
+        <div class="alingLoginBtn">
+            <ion-button strong="true" class="btnLogin" (click)="onClicCreateAcc()" expand="block" fill="solid" shape="round">
+                CREAR CUENTA
+            </ion-button>
+
+
+        </div>
+
+
+        <div class="alingLoginBtnFixed">
+
+            <ion-button strong="true" class="btnDontHaveAcc" (click)="onCLickHaveAcc()" expand="block" fill="outline" shape="round">
+                YA TENGO CUENTA
+            </ion-button>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</ion-content>

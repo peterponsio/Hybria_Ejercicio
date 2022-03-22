@@ -1,0 +1,72 @@
+.ItemsConfigurationVertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto !important;
+    align-items: center;
+}
+
+.carInfo>p {
+    margin-bottom: 0.4vh !important;
+    font-family: 'Noto Sans Khojki';
+    font-style: normal;
+    line-height: 0vh !important;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.carTitle {
+    font-family: 'Nokora_Regular' !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px !important;
+    line-height: 26px !important;
+    text-align: center !important;
+    color: #FF6500 !important;
+}
+
+.carSubtitle {
+    font-family: 'Noto Sans Khojki' !important;
+    font-style: normal !important;
+    font-weight: 400;
+    font-size: 25px !important;
+    line-height: 46px !important;
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+    color: #000000;
+    margin-left: 0;
+    margin-bottom: 1vh !important;
+}
+
+.carPrice {
+    font-size: 15px;
+    line-height: 28px;
+    font-family: 'Noto Sans Khojki';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    padding-top: 1.3vh !important;
+}
+
+.imgCarItem {
+    margin-top: 0vh !important;
+}
+
+input {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #AEAEAE;
+}

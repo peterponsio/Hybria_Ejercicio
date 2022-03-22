@@ -1,0 +1,130 @@
+<app-header-menu></app-header-menu>
+
+<ion-content class="paddingContent">
+
+    <ion-card class="cardHorizontalHome">
+
+        <div class="headerCardHome">
+            <img src="../../../../assets/icon/Ellipse 3.png" alt="">
+            <p>Nombre Usuario</p>
+
+        </div>
+
+        <div class="contentCardHome">
+
+            <div class="textCardContent">
+                <p>
+                    Conduce donde sea con este gran coche.
+                </p>
+                <div class="btnSeeCarContainer">
+                    <ion-button class="btnSeeCar" (click)="onClickSeeThisCarData()" expand="block" fill="clear" shape="round">
+                        VER COCHE
+                    </ion-button>
+                </div>
+
+            </div>
+            <div>
+                <img src="../../../../assets/Image Card.png" alt="">
+            </div>
+
+
+        </div>
+
+
+    </ion-card>
+
+    <div style="margin: 3vh;">
+
+        <div class="headerSlides">
+            <p>
+                Ultimos coches en venta de segunda mano
+            </p>
+        </div>
+
+        <div class="subheaderSlides">
+            <p>
+                Una amplia gama donde elegir
+            </p>
+        </div>
+
+
+        <div class="listSlideCars">
+            <app-card-slide></app-card-slide>
+
+        </div>
+
+        <div class="headerSlides">
+            <p>
+                Ultimo review subido
+            </p>
+        </div>
+
+        <div class="subheaderSlides">
+            <p>
+                Modelo nuevo
+            </p>
+        </div>
+
+        <div class="trailerVideoContainer">
+
+            <img (click)="onClickOpenVideo()" class="playIcon" src="../../../../assets/Play Icon.png" alt="">
+
+        </div>
+
+        <div class="headerSlides">
+            <p>
+                ¿Que estas buscando?
+            </p>
+        </div>
+
+        <div class="footer_content">
+
+            <ion-grid fixed>
+                <ion-row>
+                    <ion-col size="6">
+                        <div class="containersGrid_1">
+
+
+                            <p class="textGrids">SUV</p>
+
+                        </div>
+
+                    </ion-col>
+                    <ion-col class="containersGrid" size="6">
+
+                        <div class="containersGrid_2">
+
+                            <p class="textGrids">SUV</p>
+
+                        </div>
+
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col class="containersGrid" size="6">
+                        <div class="containersGrid_3">
+
+                            <p class="textGrids">SUV</p>
+
+                        </div>
+                    </ion-col>
+                    <ion-col class="containersGrid" size="6">
+                        <div class="containersGrid_4">
+
+                            <p class="textGrids">SUV</p>
+
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+</ion-content>

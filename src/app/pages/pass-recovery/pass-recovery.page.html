@@ -1,0 +1,48 @@
+<div class="headerContent">
+    <div>
+        <img (click)="onClickBackButton()" src="../../../assets/back_arrow.png" alt="">
+    </div>
+
+    <div>
+
+        <ion-icon class="helperTextRecovry" slot="start" name="help-circle-outline"></ion-icon>
+
+    </div>
+</div>
+
+
+<ion-content>
+
+    <div class="contentLogin">
+
+        <div class="welcomeTitle">
+            <p>¿No recuerdas tu contraseña?
+            </p>
+        </div>
+        <p class="accText">Ingresa tu email para restablecer tu contraseña.</p>
+
+        <div>
+
+            <ion-item class="itemInput">
+
+                <ion-label class="labelsInputs" position="floating">Email</ion-label>
+
+                <ion-input>
+                    <ion-icon class="iconAling" slot="start" name="mail-outline"></ion-icon>
+                </ion-input>
+
+            </ion-item>
+
+        </div>
+
+        <div class="alingLoginBtn">
+            <ion-button strong="true" class="btnLogin" (click)="onClickSendRecoveryMail()" expand="block" fill="solid" shape="round">
+                ENVIAR
+            </ion-button>
+
+
+        </div>
+
+    </div>
+
+</ion-content>

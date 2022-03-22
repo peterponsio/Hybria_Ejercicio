@@ -1,0 +1,75 @@
+<div class="headerContent">
+    <div>
+        <img (click)="onClickBackButton()" src="../../../assets/back_arrow.png" alt="">
+    </div>
+
+    <div>
+
+        <ion-icon class="helperTextRecovry" slot="start" name="help-circle-outline"></ion-icon>
+
+    </div>
+</div>
+
+
+<ion-content>
+
+    <div class="contentLogin">
+
+        <div class="welcomeTitle">
+            <p>Restablece tu contraseña
+            </p>
+        </div>
+
+        <div class="accText">
+            <p>Introduce el código de confirmación.</p>
+        </div>
+
+        <div>
+
+            <ion-item class="itemInputMail">
+
+                <ion-label class="labelsInputs" position="floating">Email</ion-label>
+
+                <ion-input>
+                    <img class="iconAling alingIconsInputsKey" src="../../../assets/code.png" alt="">
+                </ion-input>
+
+            </ion-item>
+
+            <ion-item class="itemInput">
+
+                <ion-label class="labelsInputs" position="floating">Contraseña</ion-label>
+                <ion-input>
+                    <img class="alingIconsInputs" src="../../../assets/icon/keycapclose.png" alt="">
+                </ion-input>
+
+                <ion-icon class="iconAlingEnd" slot="end" name="eye-outline"></ion-icon>
+
+            </ion-item>
+
+
+            <ion-item class="itemInput">
+
+                <ion-label class="labelsInputs" position="floating">Repite contraseña</ion-label>
+                <ion-input>
+                    <img class="alingIconsInputs" src="../../../assets/icon/keycapclose.png" alt="">
+                </ion-input>
+
+                <ion-icon class="iconAlingEnd" slot="end" name="eye-outline"></ion-icon>
+
+            </ion-item>
+
+
+        </div>
+
+        <div class="alingLoginBtn">
+            <ion-button strong="true" class="btnLogin" (click)="onClickSendDataToResetPass()" expand="block" fill="solid" shape="round">
+                ENVIAR
+            </ion-button>
+
+
+        </div>
+
+    </div>
+
+</ion-content>

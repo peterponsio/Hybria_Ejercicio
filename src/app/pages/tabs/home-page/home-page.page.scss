@@ -1,0 +1,178 @@
+.headerCardHome {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.headerCardHome * {
+    margin-left: 3vw !important;
+    align-items: center;
+    margin-top: 1.2vh;
+}
+
+.headerCardHome>img {
+    height: 4vh;
+    margin-top: 1vh;
+}
+
+.cardHorizontalHome {
+    height: auto;
+    border-radius: 20px;
+    width: auto;
+    background: #606C88;
+    margin-top: 0vh;
+}
+
+.contentCardHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.textCardContent {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 4vw;
+    line-height: 6vw;
+    color: #FFFFFF;
+    width: 38vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnSeeCar {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    color: #000;
+    margin-top: 1vh;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #000000;
+    margin-bottom: 2vh;
+}
+
+.headerSlides {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.subheaderSlides {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #9E9E9E;
+}
+
+.trailerVideoContainer {
+    background-image: url("../../../../assets/mejores-suv-2020\ 1.png");
+    height: 43vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+ion-col {
+    border-radius: 20px !important;
+}
+
+.playIcon {
+    margin: 0 auto !important;
+    margin-left: 10vw;
+    height: 8vh;
+}
+
+.gridTextClass {
+    z-index: 10;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+    color: #FFFFFF;
+    margin: 0 auto !important;
+    height: 8vh;
+}
+
+.containersGrid_1 {
+    background-image: url("../../../../assets/icon/grids_footer/40-403419_suv-cars-download\ 1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 20px !important;
+    display: flex;
+    height: 20vh;
+    width: 20vh;
+    align-items: center;
+}
+
+.containersGrid_2 {
+    background-image: url("../../../../assets/icon/grids_footer/thumb-1920-1046181\ 1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 20px !important;
+    display: flex;
+    height: 20vh;
+    width: 20vh;
+    align-items: center;
+}
+
+.containersGrid_3 {
+    background-image: url("../../../../assets/icon/grids_footer/960766\ 1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 20px !important;
+    display: flex;
+    height: 20vh;
+    width: 20vh;
+    align-items: center;
+}
+
+.containersGrid_4 {
+    background-image: url("../../../../assets/icon/grids_footer/grid_1\ \(2\).png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 20px !important;
+}
+
+.textGrids {
+    z-index: 10;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+    color: #FFFFFF;
+    margin: 0 auto !important;
+    height: 8vh;
+}

@@ -1,0 +1,81 @@
+<div class="headerContent">
+    <div>
+        <img (click)="onClickBackButton()" src="../../../assets/back_arrow.png" alt="">
+    </div>
+
+    <div>
+        <p class="helperText" (click)="onClickRecoverAcc()">
+            ¿Problemas para acceder?
+        </p>
+    </div>
+</div>
+
+<ion-content>
+
+    <div class="contentLogin">
+
+        <div class="welcomeTitle">
+            <p>¡Bienvenido de nuevo!</p>
+        </div>
+
+        <div class="accText">
+            <p>Ingresa tu cuenta para continuar</p>
+        </div>
+
+        <div>
+
+            <ion-item class="itemInput">
+
+                <ion-label class="labelsInputs" position="floating">Nombre y Apellidos</ion-label>
+
+                <ion-input>
+                    <ion-icon class="iconAling" slot="start" name="person-outline"></ion-icon>
+                </ion-input>
+
+            </ion-item>
+
+
+            <ion-item class="itemInput">
+
+                <ion-label class="labelsInputs" position="floating">Contraseña</ion-label>
+                <ion-input>
+                    <img class="alingIconsInputs" src="../../../assets/icon/keycapclose.png" alt="">
+                </ion-input>
+
+                <ion-icon class="iconAlingEnd" slot="end" name="eye-outline"></ion-icon>
+
+            </ion-item>
+            <div class="remenberText">
+                <p>
+                    Recuerdame la proxima vez
+                </p>
+
+                <ion-toggle mode="md" class="toggleRemember"></ion-toggle>
+            </div>
+
+
+        </div>
+
+        <div class="alingLoginBtn">
+            <ion-button strong="true" class="btnLogin" (click)="onClickLogin()" expand="block" fill="solid" shape="round">
+                LOGIN
+            </ion-button>
+
+
+        </div>
+
+
+        <div class="alingLoginBtnFixed">
+
+            <ion-button strong="true" class="btnDontHaveAcc" (click)="onClickDontHaveAcc()" expand="block" fill="outline" shape="round">
+                AUN NO TENGO CUENTA
+            </ion-button>
+
+
+        </div>
+
+
+
+    </div>
+
+</ion-content>
