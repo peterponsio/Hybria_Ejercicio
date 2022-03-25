@@ -1,0 +1,22 @@
+.headerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto !important;
+    width: 100%;
+    background-color: #FFFFFF !important;
+    padding: 5vw !important;
+    margin: 0px !important;
+    align-items: center;
+}
+
+.helperTextRecovry {
+    margin-top: -3px !important;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 18px;
+    color: #676767;
+    align-items: center;
+}

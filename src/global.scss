@@ -41,19 +41,28 @@
     margin-right: 2vw;
 }
 
+.alingIconsInputsEmail {
+    height: 4vw;
+    margin-right: 2vw;
+}
+
 .iconAlingEnd {
     color: #676767;
     margin-right: -3vw !important;
     margin-top: 5vh;
 }
 
-.headerContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 5vw;
-    height: auto;
-    width: auto;
+// .headerContent {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     margin: 5vw;
+//     height: auto;
+//     width: auto;
+//     background-color: #FFFFFF !important;
+// }
+.headerItems {
+    background-color: #FFFFFF !important;
 }
 
 .backBtnArrow {
@@ -110,6 +119,15 @@
 .itemInput {
     margin-top: 3vh !important;
     margin-left: -5vw;
+    display: flex;
+    flex-direction: row;
+    --color-activated: #FB6401 !important;
+    --color-hover: var(--color-activated) !important;
+}
+
+ion-input {
+    --color-activated: #FB6401 !important;
+    --color-hover: var(--color-activated) !important;
 }
 
 .iconAlingEnd {
@@ -184,7 +202,7 @@
     flex-direction: row;
     border-radius: 20px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.25);
 }
 
 .searchBarContent>input {
@@ -212,4 +230,66 @@
 
 .carItems {
     border-bottom: 1px solid #CBCBCB;
+}
+
+// .changeBottomBorder {
+//     --border-color: #FB6401;
+//     --background: #FB6401;
+//     --background-activated: var(--background)
+// }
+.changeBottomBorder>ion-item {
+    --border-color: #FB6401;
+}
+
+.inframeVid {
+    width: 100%;
+    border-radius: 15px;
+    height: 45vh;
+}
+
+ion-tab-bar {
+    background-color: white !important;
+}
+
+// .ng-valid {
+//     --border-color: #FB6401 !important;
+//     border-bottom-color: #FB6401 !important;
+//     color: #353232 !important;
+//     /* green */
+// }
+.ion-valid {
+    --highlight-background: #272525 !important;
+    --highlight-color-valid: #353232 !important;
+}
+
+.ion-invalid {
+    --highlight-background: #FB6401 !important;
+    --highlight-color-invalid: #0f0f0f !important;
+    /* red */
+}
+
+ion-label {
+    --color: #000000;
+}
+
+ion-item.item-has-focus>ion-label {
+    color: #272525 !important;
+}
+
+.item-interactive.item-has-f {
+    --highlight-background: #000000;
+}
+
+ion-card-content {
+    padding-inline-end: 0px !important;
+}
+
+.actionSheetTop {
+    display: flex !important;
+    justify-content: flex-start !important;
+    background-color: #fb650141 !important;
+}
+
+.action-sheet-container.sc-ion-action-sheet-md {
+    display: block;
 }

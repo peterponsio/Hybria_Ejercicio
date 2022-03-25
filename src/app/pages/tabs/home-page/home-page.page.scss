@@ -87,7 +87,7 @@
 
 .trailerVideoContainer {
     background-image: url("../../../../assets/mejores-suv-2020\ 1.png");
-    height: 43vh;
+    height: 40vh;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -119,49 +119,55 @@ ion-col {
 .containersGrid_1 {
     background-image: url("../../../../assets/icon/grids_footer/40-403419_suv-cars-download\ 1.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     border-radius: 20px !important;
     display: flex;
     height: 20vh;
     width: 20vh;
     align-items: center;
+    margin: 2vw;
 }
 
 .containersGrid_2 {
     background-image: url("../../../../assets/icon/grids_footer/thumb-1920-1046181\ 1.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     border-radius: 20px !important;
     display: flex;
     height: 20vh;
     width: 20vh;
     align-items: center;
+    margin: 2vw;
 }
 
 .containersGrid_3 {
     background-image: url("../../../../assets/icon/grids_footer/960766\ 1.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     border-radius: 20px !important;
     display: flex;
     height: 20vh;
     width: 20vh;
     align-items: center;
+    margin-top: 2vh;
+    margin: 2vw;
 }
 
 .containersGrid_4 {
     background-image: url("../../../../assets/icon/grids_footer/grid_1\ \(2\).png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     height: 20vh;
     width: 20vh;
     border-radius: 20px !important;
+    margin-top: 2vh;
+    margin: 2vw;
 }
 
 .textGrids {
@@ -174,5 +180,9 @@ ion-col {
     /* identical to box height */
     color: #FFFFFF;
     margin: 0 auto !important;
-    height: 8vh;
+}
+
+.gridRows {
+    display: flex;
+    justify-content: space-around;
 }

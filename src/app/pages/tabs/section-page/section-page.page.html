@@ -1,9 +1,55 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>section_page</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header-menu></app-header-menu>
 
-<ion-content>
+<div class="segmentBorder">
+    <ion-segment mode="md" value="generales" (ionChange)="segmentChanged($event)">
+        <ion-segment-button value="generales">
+            <ion-label>GENERALES</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="premiun">
+            <ion-label>PREMIUN</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="accesorios">
+            <ion-label>ACCESORIOS</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+
+</div>
+
+<img *ngIf="isPremiun" class="premiunAlertBanner" src="../../../../assets/Info snack.png" alt="">
+
+<ion-content class="ion-no-padding">
+
+    <ion-list>
+
+        <div *ngFor="let item of [1,2,3]" class="itemsLIstSegments">
+
+            <ion-grid fixed>
+                <ion-row>
+                    <ion-col size="5">
+                        <img src="../../../../assets/lol 1.png" alt="">
+                    </ion-col>
+                    <ion-col size="7">
+                        <div class="alingVerticalText">
+
+                            <p class="titleItem">CAMBIO DE ACEITE</p>
+
+                            <p class="subtitleItem">Rebaja del 50% en tu proximo cambio de Aceite en uno de nuestros mecanicos.</p>
+
+                        </div>
+
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+
+
+
+
+        </div>
+
+
+
+    </ion-list>
+
 
 </ion-content>

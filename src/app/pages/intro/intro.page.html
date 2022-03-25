@@ -1,6 +1,6 @@
 <div class="headerItems">
 
-    <div style="display: flex; flex-direction: row;">
+    <div style="display: flex; flex-direction: row; align-items: center;">
         <div>
             <img class="logoLogin" src="../../../assets/logoHybria.png" alt="Hybria_logo">
         </div>
@@ -12,12 +12,10 @@
 
 
     <div>
-        <p class="loginBtn">LOGIN</p>
+        <p class="loginBtn" (click)="onClickLogin()">LOGIN</p>
     </div>
 
 </div>
-
-
 
 <ion-content>
 
@@ -42,7 +40,7 @@
 
         <div class="alingLoginBtn">
             <ion-button strong="true" class="btnLogin" (click)="onClickSingUp()" expand="block" fill="solid" shape="round">
-                LOGIN
+                SING UP
             </ion-button>
 
 

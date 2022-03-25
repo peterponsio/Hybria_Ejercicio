@@ -1,9 +1,62 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>contact_page</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header-menu></app-header-menu>
 
 <ion-content>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+
+        <div class="ion-padding">
+
+            <div class="titleContact">
+                <p>¿Quieres Contactarnos?
+                </p>
+            </div>
+
+            <div class="accText">
+                <p>Envianos tu duda o problema y te contestremos lo antes posible</p>
+            </div>
+
+            <ion-item class="itemInput " [ngClass]="{'class1 class2 class3' : true}">
+
+
+                <ion-label class="labelsInputs" position="floating">Email</ion-label>
+
+                <ion-input formControlName="email" [ngModel]="contactForm.getRawValue().email" class="form-control ">
+                    <ion-icon class="iconAling" slot="start" name="mail-outline"></ion-icon>
+                </ion-input>
+
+
+
+            </ion-item>
+
+
+            <ion-item value="mails" class="itemInput" [ngClass]="{'changeBottomBorder':changeBottomBorderTitle}">
+
+                <ion-label position="floating">Titulo</ion-label>
+
+                <ion-input formControlName="title" [ngModel]="contactForm.getRawValue().title" class="form-control ">
+
+                </ion-input>
+
+            </ion-item>
+
+
+            <ion-item class="itemInput textAreaInput" [ngClass]="{'changeBottomBorder':changeBottomBorderMensaje}">
+                <ion-label position="floating">Mensaje</ion-label>
+                <ion-textarea formControlName="mensaje" [ngModel]="contactForm.getRawValue().mensaje" class="form-control "></ion-textarea>
+            </ion-item>
+
+        </div>
+
+
+        <div class="alingLoginBtn">
+            <ion-button strong="true" class="btnLogin" type="submit" expand="block" fill="solid" shape="round">
+                ENVIAR
+            </ion-button>
+
+
+        </div>
+
+    </form>
 
 </ion-content>

@@ -1,0 +1,61 @@
+.segmentBorder {
+    border-top: 0.1px solid #ebe0eb;
+    border-bottom: 0.1px solid #c5bec5;
+}
+
+ion-segment-button {
+    --indicator-color: #FB6401;
+    --indicator-box-shadow: var(--indicator-color);
+    --color-checked: var(--indicator-color)
+}
+
+ion-content {
+    margin-top: 0vh;
+}
+
+.itemsLIstSegments {
+    border-bottom: 0.1px solid #c5bec5;
+}
+
+.alingVerticalText {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleItem {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4vw;
+    line-height: 0;
+    /* or 30px */
+    display: flex;
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.subtitleItem {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 350;
+    font-size: 4vw;
+    line-height: 120%;
+    display: flex !important;
+    letter-spacing: 0.84px;
+    color: #474444 !important;
+}
+
+ion-col>img {
+    height: 100% !important;
+    width: 100%;
+}
+
+.premiunAlertBanner {
+    margin-left: 1vh;
+    margin-right: 1vh;
+    margin-top: 1vh;
+    height: auto !important;
+    width: auto !important;
+    border-radius: 10px;
+}

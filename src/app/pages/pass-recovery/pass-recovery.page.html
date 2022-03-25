@@ -5,7 +5,7 @@
 
     <div>
 
-        <ion-icon class="helperTextRecovry" slot="start" name="help-circle-outline"></ion-icon>
+        <ion-icon (click)="onClickHelp()" class="helperTextRecovry" slot="start" name="help-circle-outline"></ion-icon>
 
     </div>
 </div>
@@ -13,36 +13,40 @@
 
 <ion-content>
 
-    <div class="contentLogin">
+    <form [formGroup]="recoveryForm" (ngSubmit)="onSubmit()">
 
-        <div class="welcomeTitle">
-            <p>¿No recuerdas tu contraseña?
-            </p>
+        <div class="contentLogin">
+
+            <div class="welcomeTitle">
+                <p>¿No recuerdas tu contraseña?
+                </p>
+            </div>
+            <p class="accText">Ingresa tu email para restablecer tu contraseña.</p>
+
+            <div>
+
+                <ion-item class="itemInput itemInputPass">
+
+                    <ion-label class="labelsInputs" position="floating">Email</ion-label>
+
+                    <ion-input formControlName="email" [ngModel]="recoveryForm.getRawValue().email" class="form-control ">
+                        <ion-icon class="iconAling" slot="start" name="mail-outline"></ion-icon>
+                    </ion-input>
+
+                </ion-item>
+
+            </div>
+
+            <div class="alingLoginBtn">
+                <ion-button *ngIf="showBtn" strong="true" class="btnLogin" type="submit" expand="block" fill="solid" shape="round">
+                    ENVIAR
+                </ion-button>
+
+
+            </div>
+
         </div>
-        <p class="accText">Ingresa tu email para restablecer tu contraseña.</p>
 
-        <div>
-
-            <ion-item class="itemInput">
-
-                <ion-label class="labelsInputs" position="floating">Email</ion-label>
-
-                <ion-input>
-                    <ion-icon class="iconAling" slot="start" name="mail-outline"></ion-icon>
-                </ion-input>
-
-            </ion-item>
-
-        </div>
-
-        <div class="alingLoginBtn">
-            <ion-button strong="true" class="btnLogin" (click)="onClickSendRecoveryMail()" expand="block" fill="solid" shape="round">
-                ENVIAR
-            </ion-button>
-
-
-        </div>
-
-    </div>
+    </form>
 
 </ion-content>

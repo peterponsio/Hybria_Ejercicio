@@ -22,86 +22,95 @@
         <div class="accText">
             <p>Introduce tus datos para inscribirte.</p>
         </div>
+        <form [formGroup]="singForm" (ngSubmit)="onSubmit()">
 
-        <div>
-
-            <ion-item class="itemInput">
-
-                <ion-label class="labelsInputs" position="floating">Nombre y Apellidos</ion-label>
-
-                <ion-input>
-                    <ion-icon class="iconAling" slot="start" name="person-outline"></ion-icon>
-                </ion-input>
-
-            </ion-item>
+            <div class="ion-padding">
 
 
-            <ion-item class="itemInput">
+                <ion-item class="itemInput itemInputPass">
 
-                <ion-label class="labelsInputs" position="floating">Contraseña</ion-label>
-                <ion-input>
-                    <img class="alingIconsInputs" src="../../../assets/icon/keycapclose.png" alt="">
-                </ion-input>
+                    <ion-label class="labelsInputs" position="floating">Nombre y Apellidos</ion-label>
 
-                <ion-icon class="iconAlingEnd" slot="end" name="eye-outline"></ion-icon>
+                    <ion-input formControlName="name" [ngModel]="singForm.getRawValue().name" class="form-control ">
+                        <img class="alingIconsInputs" src="../../../assets/icon_person.png" alt="">
+                    </ion-input>
 
-            </ion-item>
+                </ion-item>
 
 
-            <ion-item class="itemInput">
+                <ion-item class="itemInputPass itemInput">
 
-                <ion-label class="labelsInputs" position="floating">Repite contraseña</ion-label>
-                <ion-input>
-                    <img class="alingIconsInputs" src="../../../assets/icon/keycapclose.png" alt="">
-                </ion-input>
+                    <ion-label class="labelsInputsPass" position="floating">Contraseña</ion-label>
+                    <ion-input formControlName="password" [ngModel]="singForm.getRawValue().password" [type]=" seePass " class="form-control " [type]="seePass">
+                        <img class="alingIconsInputs" src="../../../assets/icon/keycapclose.png" alt="">
+                    </ion-input>
 
-                <ion-icon class="iconAlingEnd" slot="end" name="eye-outline"></ion-icon>
+                    <ion-icon (click)="onClickSeePass()" class="iconAlingEnd" slot="end" name="eye-outline"></ion-icon>
 
-            </ion-item>
+                </ion-item>
 
-            <ion-item class="itemInput">
 
-                <ion-label class="labelsInputs" position="floating">Email</ion-label>
+                <ion-item class="itemInput itemInputPass">
 
-                <ion-input>
-                    <ion-icon class="iconAling" slot="start" name="mail-outline"></ion-icon>
-                </ion-input>
+                    <ion-label class="labelsInputsPass" position="floating">Repite contraseña</ion-label>
+                    <ion-input formControlName="repeatPassword" [ngModel]="singForm.getRawValue().repeatPassword" class="form-control " [type]="seePassRepeat">
+                        <img class="alingIconsInputs" src="../../../assets/icon/keycapclose.png" alt="">
+                    </ion-input>
 
-            </ion-item>
-        </div>
+                    <ion-icon (click)="onClickSeePassRepeat()" class="iconAlingEnd" slot="end" name="eye-outline"></ion-icon>
 
-        <div class="accTextUploadImg">
-            <p>Sube una foto de perfil</p>
-        </div>
+                </ion-item>
 
-        <div class="listImgs">
+                <ion-item class="itemInput itemInputPass">
 
-            <div>
-                <ion-button class="addImgButton" (click)="addProfilePic()">
-                    <ion-icon slot="icon-only" name="add"></ion-icon>
+                    <ion-label class="labelsInputs" position="floating">Email</ion-label>
+
+                    <ion-input formControlName="email" class="form-control">
+                        <img class="alingIconsInputsEmail" src="../../../assets/email_icon.png" alt="">
+                    </ion-input>
+
+
+                </ion-item>
+            </div>
+
+
+
+            <div class="accTextUploadImg">
+                <p>Sube una foto de perfil</p>
+            </div>
+
+            <div class="listImgs">
+
+                <div class="addImgButton">
+                    <ion-button class="addImgButton" (click)="addProfilePic()">
+                        <ion-icon slot="icon-only" name="add"></ion-icon>
+                    </ion-button>
+
+                </div>
+
+                <img class="addedIMG" *ngFor="let photo of photos" [src]="photo" alt="data">
+
+                <!-- <div style="border-radius: 1px solid;" class="addedIMG" *ngFor="let photo of photos">
+                <img style="border-radius: 1px solid;" [src]="photo" alt="data">
+            </div> -->
+
+
+            </div>
+
+            <div class="alingLoginBtn">
+                <ion-button *ngIf="showBtn" strong="true" class="btnLogin" type="submit" expand="block" fill="solid" shape="round">
+                    CREAR CUENTA
                 </ion-button>
 
+
             </div>
 
-            <div class="addImgButton" *ngFor="let photo of photos">
-                <img [src]="photo" alt="data">
-            </div>
-
-
-        </div>
-
-        <div class="alingLoginBtn">
-            <ion-button strong="true" class="btnLogin" (click)="onClicCreateAcc()" expand="block" fill="solid" shape="round">
-                CREAR CUENTA
-            </ion-button>
-
-
-        </div>
+        </form>
 
 
         <div class="alingLoginBtnFixed">
 
-            <ion-button strong="true" class="btnDontHaveAcc" (click)="onCLickHaveAcc()" expand="block" fill="outline" shape="round">
+            <ion-button *ngIf="showBtn" strong="true" class="btnDontHaveAcc" (click)="onCLickHaveAcc()" expand="block" fill="outline" shape="round">
                 YA TENGO CUENTA
             </ion-button>
 

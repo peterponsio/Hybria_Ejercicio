@@ -1,14 +1,16 @@
-<ion-tabs>
+<ion-tabs (ionTabsWillChange)="ionTabsWillChange($event)">
     <ion-tab-bar slot="bottom,top" style="border-radius: 20px 20px 0px 0px; height: 10vh;">
-        <ion-tab-button tab="home-page">
+        <ion-tab-button tab="home-page" class="selectedTab">
             <div class="iconHome">
-                <img src="../../../assets/icon/tabsIcons/home.png" alt="">
+                <img *ngIf="!tabHome" src="../../../assets/icon/tabsIcons/home.png" alt="" [ngClass]="{'selectedTab' : tabHome}">
+                <img *ngIf="tabHome" src="../../../assets/home_on.png" alt="" [ngClass]="{'selectedTab' : tabHome}">
 
             </div>
         </ion-tab-button>
         <ion-tab-button tab="search-page">
             <div class="iconHome">
-                <img src="../../../assets/icon/tabsIcons/lupa.png" alt="">
+                <img *ngIf="!tabSearch" src="../../../assets/icon/tabsIcons/lupa.png" [ngClass]="{'selectedTab' : tabSearch}" alt="">
+                <img *ngIf="tabSearch" src="../../../assets/search_on.png" [ngClass]="{'selectedTab' : tabSearch}" alt="">
 
             </div>
 
@@ -17,19 +19,27 @@
             <div class="imgCenterAdd">
 
                 <img class="imgAdd" src="../../../assets/icon/tabsIcons/Vector 7.png" alt="">
+
             </div>
 
         </ion-tab-button>
         <ion-tab-button tab="section-page">
             <div class="iconHome">
-                <img src="../../../assets/icon/tabsIcons/loyalty_black_24dp 1.png" alt="">
+
+                <img *ngIf="!tabSegment" src="../../../assets/icon/tabsIcons/loyalty_black_24dp 1.png" alt="" [ngClass]="{'selectedTab' : tabSegment}">
+
+                <img *ngIf="tabSegment" src="../../../assets/section_on.png" [ngClass]="{'selectedTab' : tabSearch}" alt="">
+
 
             </div>
 
         </ion-tab-button>
-        <ion-tab-button tab="tab3">
+        <ion-tab-button tab="contact-page">
             <div class="iconHome">
-                <img src="../../../assets/icon/tabsIcons/mail.png" alt="">
+                <img *ngIf="!tabContact" src="../../../assets/icon/tabsIcons/mail.png" alt="" [ngClass]="{'selectedTab' : tabContact}">
+
+                <img *ngIf="tabContact" src="../../../assets/contact_on.png" [ngClass]="{'selectedTab' : tabSearch}" alt="">
+
 
             </div>
 

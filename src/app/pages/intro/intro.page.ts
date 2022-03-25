@@ -14,7 +14,11 @@ export class IntroPage implements OnInit {
   }
 
   onClickSingUp(){
-    // console.log("click");
+    console.log("click");
+    this.navCtrl.navigateForward("sing-up");
+  }
+
+  onClickLogin(){
     this.navCtrl.navigateForward("login");
   }
 

@@ -1,13 +1,17 @@
 .imgCenterAdd {
     background: #FB6401;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
-    height: 7vh;
-    width: 7vh;
+    height: 6vh;
+    width: 11vw;
     align-items: center;
     border-radius: 30px;
 }
 
 .imgAdd {
     align-items: center;
-    margin-top: 2vh;
+    margin-top: 22%;
+}
+
+ion-tabs {
+    background-color: white;
 }

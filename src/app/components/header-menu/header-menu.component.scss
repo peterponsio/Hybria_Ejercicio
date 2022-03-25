@@ -1,4 +1,18 @@
 .headerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5vw;
     height: auto;
-    align-items: center;
+    width: auto;
+    background-color: #FFFFFF !important;
+}
+
+.logoLogin {
+    margin-top: -1vh !important;
+}
+
+.actionSheetTop {
+    display: flex !important;
+    justify-content: flex-start !important;
 }

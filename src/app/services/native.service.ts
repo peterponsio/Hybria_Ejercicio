@@ -1,7 +1,7 @@
 import { environment } from './../../environments/environment';
 import { Injectable } from '@angular/core';
 
-import { YoutubeVideoPlayer } from '@awesome-cordova-plugins/youtube-video-player/ngx';
+// import { YoutubeVideoPlayer } from '@awesome-cordova-plugins/youtube-video-player/ngx';
 import { Camera, CameraOptions } from '@awesome-cordova-plugins/camera/ngx';
 
 
@@ -22,7 +22,7 @@ export class NativeService {
   };
 
 
-  constructor(private cam:Camera,private youtube: YoutubeVideoPlayer) { }
+  constructor(private cam:Camera) { }
 
   imgFile:any;
  
@@ -45,7 +45,10 @@ export class NativeService {
     playYTvideo(){
      ///AIzaSyAcJTuvyCJLAwGJFatBEvX6iwH2g8gu37c
  
-     this.youtube.openVideo("BNVZmrxXuuU");
+    //  this.youtube.openVideo("BNVZmrxXuuU");
+
+    
+
    }
  
 }
