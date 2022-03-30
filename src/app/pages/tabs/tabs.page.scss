@@ -1,17 +1,33 @@
 .imgCenterAdd {
     background: #FB6401;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
-    height: 6vh;
+    height: 11vw;
     width: 11vw;
+    display: flex;
     align-items: center;
     border-radius: 30px;
 }
 
 .imgAdd {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-top: 22%;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
 }
 
 ion-tabs {
     background-color: white;
+}
+
+.tabIconActivated {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+img {
+    height: 3.5vh;
 }

@@ -1,0 +1,74 @@
+ion-card-content {
+    display: revert !important;
+    margin-top: 1vh !important;
+    font-size: 16px;
+}
+
+.rowContentCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto !important;
+    height: auto !important;
+    margin: 1vh;
+    margin-top: -1vh !important;
+}
+
+.contentCardProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: -webkit-left;
+    margin-top: 1vh;
+    font-size: 16px;
+}
+
+p {
+    margin-left: 1vh;
+}
+
+.headerCard {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vh;
+    line-height: 27px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    margin-top: -2vh !important;
+}
+
+.subheaderSlides {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #9E9E9E;
+    margin: 2vw !important;
+}
+
+.seeMoreMovies {
+    margin-left: -10vh !important;
+}
+
+.btnMore {
+    --background: #FB6401;
+    margin-top: 24%;
+    --background-activated: var(--background)
+}
+
+.imgCard {
+    max-height: 13vh;
+    width: 26vh;
+}
+
+.topText {
+    font-size: 2vh;
+}

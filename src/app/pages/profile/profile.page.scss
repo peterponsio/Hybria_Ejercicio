@@ -1,0 +1,125 @@
+.headerProfile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5vw;
+    height: auto;
+    width: auto;
+    background-color: #FFFFFF !important;
+}
+
+.imgProfile {
+    display: flex;
+    align-items: center;
+}
+
+.imgProfile>img {
+    margin: 0 auto;
+    height: 21vh;
+    width: 21vh;
+    border-radius: 100%;
+}
+
+.profileFields {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField {
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 1;
+}
+
+.headerSlides {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vh;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.subheaderSlides {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #9E9E9E;
+}
+
+.labelsForm {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vh;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #000000 !important;
+}
+
+.imgProfileEdit {
+    display: flex;
+    align-items: center;
+    height: 21vh !important;
+    width: 21vh !important;
+    border-radius: 70px;
+    background-color: #e6dfdf;
+    margin: 0 auto;
+}
+
+.imgProfileEdit>img {
+    height: 10vh;
+    width: 10vh;
+    margin: 0 auto;
+}
+
+.iconEdit {
+    height: 5vh !important;
+    position: absolute;
+    width: 5vh !important;
+    top: 16vh;
+    left: 56vw;
+    z-index: 10;
+}
+
+.editInput {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    margin-top: 1vh;
+}
+
+.button-native {
+    background-color: #FB6401 !important;
+    --color: #FB6401 !important;
+}
+
+.native-input[disabled] {
+    opacity: 1 !important;
+}
+
+.native-input[disabled].sc-ion-input-md {
+    opacity: 1 !important;
+}
+
+.native-input.sc-ion-input-md {
+    opacity: 0.1 !important;
+}
+
+.textOpa {
+    --placeholder-opacity: 1 !important;
+    --placeholder-color: black !important;
+}
+
+.inputField {
+    --placeholder-opacity: 1 !important;
+}

@@ -18,7 +18,6 @@ export class TabsPage implements OnInit {
   }
 
   ionTabsWillChange(event: any){
-    console.log(event.tab);
 
     switch( event.tab) {
       case "home-page":

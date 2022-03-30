@@ -1,0 +1,32 @@
+<app-header-menu>
+</app-header-menu>
+<ion-content class="ion-padding">
+
+    <ion-datetime id="parent" disabled="false" ref="el => this.customDatetime = el" (ionChange)="seeDayData($event)" mode="md" locale="es-ES">
+
+    </ion-datetime>
+
+
+    <div *ngIf="!eventDay">
+        <p>No hay eventos</p>
+    </div>
+
+    <ion-list *ngIf="eventDay">
+
+        <ion-item *ngFor="let item of eventDay; let i = index">
+            <ion-label>{{item.title}}</ion-label>
+            <img src="{{item.img}}" alt="">
+        </ion-item>
+
+    </ion-list>
+
+
+    <!-- <mbsc-datepicker></mbsc-datepicker> -->
+    <!-- <mbsc-datepicker [controls]="['calendar']" display="inline" [selectMultiple]="true" [selectMax]="5" headerText="Pick up to 5 days"></mbsc-datepicker> -->
+    <!-- <mbsc-datepicker [controls]="['calendar']" display="inline" [selectMultiple]="true" [selectCounter]="true"></mbsc-datepicker> -->
+
+
+
+
+
+</ion-content>

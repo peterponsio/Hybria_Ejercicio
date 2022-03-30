@@ -1,0 +1,38 @@
+<div style="display: flex; flex-direction: row;">
+
+    <div class="backBtn" (click)="onClickBack()">
+
+        <img src="../../../assets/back_arrow.png" alt="volver">
+
+    </div>
+
+    <div>
+
+        <p class="titleModal">{{dataDetail.title}}</p>
+
+    </div>
+
+</div>
+<ion-content class="ion-padding">
+
+    <div>
+
+        <div>
+            <img class="ImgDetail" src="{{dataDetail.img}}" alt="">
+        </div>
+
+        <div class="titleDetail">
+            <p>{{dataDetail.title}}</p>
+        </div>
+        <div class="descDetail">
+            <p>{{dataDetail.desc}}</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</ion-content>

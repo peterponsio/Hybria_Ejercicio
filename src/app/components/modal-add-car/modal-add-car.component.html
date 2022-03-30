@@ -1,0 +1,96 @@
+<div style="display: flex; flex-direction: row;">
+
+    <div class="backBtn" (click)="onClickDismissModal()">
+
+        <img src="../../../assets/back_arrow.png" alt="volver">
+
+    </div>
+
+    <div>
+
+        <p class="titleModal">ADD CAR</p>
+
+    </div>
+
+</div>
+
+<ion-content class="ion-padding">
+
+    <form [formGroup]="addCar">
+        <div style="margin: 0 auto;">
+
+            <div>
+                <p style="display: flex;  text-align: center;flex-direction: column;">
+                    Modelo
+                </p>
+            </div>
+            <ion-item style="display: contents;" class="itemInput itemInputPass form-control editInput">
+                <ion-input style="text-align: center;" formControlName="model" type="text" placeholder="Modelo" class="form-control editInput "></ion-input>
+            </ion-item>
+
+            <div>
+                <p style="display: flex;  text-align: center;flex-direction: column;">
+                    Precio
+                </p>
+            </div>
+
+            <ion-item>
+                <ion-range formControlName="price" mode="md" color="danger" [pin]="true" max="100000 ">
+                    <ion-label slot="start">0</ion-label>
+                    <ion-label slot="end">100000 €</ion-label>
+                </ion-range>
+
+            </ion-item>
+
+
+            <div>
+                <p style="display: flex; text-align: center; flex-direction: column; ">
+                    Descripcion
+                </p>
+            </div>
+
+            <ion-item style="display: contents; " class="itemInput itemInputPass form-control editInput ">
+                <ion-input style="text-align: center; " formControlName="description" type="text " placeholder="Descripcion " class="form-control editInput "></ion-input>
+            </ion-item>
+
+            <div>
+                <p style="display: flex; text-align: center;flex-direction: column; ">
+                    KM
+                </p>
+            </div>
+
+            <ion-range formControlName="km" color="danger " mode="md" [pin]="true" ticks="false" max="500000">
+                <ion-label slot="start">0</ion-label>
+                <ion-label slot="end">500000 KM</ion-label>
+            </ion-range>
+
+
+            <div>
+                <p style="display: flex; text-align: center;flex-direction: column; ">
+                    IMG
+                </p>
+            </div>
+
+            <ion-item style="display: contents; " class="itemInput itemInputPass form-control ">
+                <ion-input style="text-align: center; " class="editInput" formControlName="img" type="text " placeholder="Img "></ion-input>
+            </ion-item>
+
+
+        </div>
+
+
+        <div class="btnsModal ">
+
+            <div class="modalRow ">
+
+                <ion-button style="color: orangered;--border-color:orangered " shape="outline " expand="block " (click)="onClickAddCar() ">Añadir</ion-button>
+
+
+            </div>
+
+        </div>
+
+
+    </form>
+
+</ion-content>

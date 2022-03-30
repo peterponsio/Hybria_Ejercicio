@@ -29,9 +29,14 @@ const routes: Routes = [
       {
         path: 'contact-page',
         loadChildren: () => import('./contact-page/contact-page.module').then( m => m.ContactPagePageModule)
-      }
+      },
+      {
+        path: 'calendar-news',
+        loadChildren: () => import('./calendar-news/calendar-news.module').then( m => m.CalendarNewsPageModule)
+      },
     ]
   },
+ 
 
 ];
 

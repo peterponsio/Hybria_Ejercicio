@@ -1,0 +1,35 @@
+.modalRow>ion-button {
+    margin-top: 24%;
+    --background-activated: #FB6401;
+    --color: white;
+}
+
+.backBtn {
+    margin: 2vh;
+}
+
+.titleModal {
+    position: absolute;
+    top: -0.4vh;
+    left: 36vw;
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vh;
+    line-height: 27px;
+    color: #ff5400;
+}
+
+.editInput {
+    background-color: #f5f5f5 !important;
+    width: 100%;
+}
+
+ion-range {
+    --ion-color-base: #ff5400 !important;
+}
+
+// SHOW PIN RANGE 
+ion-range::part(pin) {
+    transform: translate3d(0px, -24px, 0px) scale(1);
+}

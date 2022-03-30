@@ -13,7 +13,7 @@
         <div class="searchBarContent">
 
 
-            <input style="background-color: white;" type="text" placeholder="Buscar">
+            <ion-input (ionChange)="changeFilter($event)" style="background-color: white;" type="text" placeholder="Buscar" clearInput></ion-input>
 
             <div class="btnSearch">
                 <img src="../../../../assets/icon/tabsIcons/lupita.png" alt="">
@@ -24,14 +24,18 @@
 
     <div style="margin-top: 5vh;">
         <ion-list>
-            <div *ngFor="let item of [1,2,3]" class="carItems">
+            <div *ngFor="let item of listCars | filter : filterText;" class="carItems">
                 <ion-grid>
                     <ion-row>
                         <ion-col size="6">
                             <div class="">
 
                                 <div class="ItemsConfigurationVertical carInfo">
-                                    <p class="carTitle">Volvo</p>
+
+                                    <div class="cut-text carTitle">
+                                        <p class="cut-text carTitle">{{item.model}}</p>
+                                    </div>
+
                                     <p class="carSubtitle">
                                         S60 2019
                                     </p>

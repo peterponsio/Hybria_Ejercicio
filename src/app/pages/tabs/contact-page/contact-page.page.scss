@@ -2,10 +2,11 @@
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 25px;
-    line-height: 34px;
+    font-size: 7vw;
     color: #000000;
     width: 56% !important;
+    display: table-caption;
+    word-wrap: normal;
 }
 
 .itemInput {
@@ -28,7 +29,7 @@
 
 .itemInput {
     margin-left: 0vw;
-    margin-right: -3vh;
+    margin-right: -1.2vh;
 }
 
 .itemInputMail {
@@ -48,4 +49,15 @@
 
 .itemInputPass {
     margin-right: 0vh !important;
+}
+
+ion-item {
+    --inner-padding-end: -10px;
+}
+
+.areaText {
+    border: 0.1px solid;
+    border-color: rgb(182, 177, 177) !important;
+    width: 100%;
+    margin-top: 1vh;
 }

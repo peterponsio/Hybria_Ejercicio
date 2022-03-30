@@ -8,6 +8,7 @@ import { SearchPagePageRoutingModule } from './search-page-routing.module';
 
 import { SearchPagePage } from './search-page.page';
 import { ComponentsModule } from 'src/app/components/components.module';
+import { PipesModule } from 'src/app/pipes/pipes/pipes.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { ComponentsModule } from 'src/app/components/components.module';
     FormsModule,
     IonicModule,
     SearchPagePageRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    PipesModule
   ],
   declarations: [SearchPagePage]
 })

@@ -19,9 +19,9 @@
             <ion-item class="itemInput " [ngClass]="{'class1 class2 class3' : true}">
 
 
-                <ion-label class="labelsInputs" position="floating">Email</ion-label>
+                <ion-label class="labelsInputs" position="floating">Email/Telefono prueba</ion-label>
 
-                <ion-input formControlName="email" [ngModel]="contactForm.getRawValue().email" class="form-control ">
+                <ion-input formControlName="email" [ngModel]="contactForm.getRawValue().email_tel" class="form-control ">
                     <ion-icon class="iconAling" slot="start" name="mail-outline"></ion-icon>
                 </ion-input>
 
@@ -41,10 +41,12 @@
             </ion-item>
 
 
-            <ion-item class="itemInput textAreaInput" [ngClass]="{'changeBottomBorder':changeBottomBorderMensaje}">
-                <ion-label position="floating">Mensaje</ion-label>
-                <ion-textarea formControlName="mensaje" [ngModel]="contactForm.getRawValue().mensaje" class="form-control "></ion-textarea>
-            </ion-item>
+
+
+            <div class="areaText">
+
+                <ion-textarea style="border: 1p solid;" formControlName="mensaje" placeholder="Mensaje" [ngModel]="contactForm.getRawValue().mensaje" class="form-control "></ion-textarea>
+            </div>
 
         </div>
 

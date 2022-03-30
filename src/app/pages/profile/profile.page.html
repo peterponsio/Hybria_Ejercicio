@@ -1,0 +1,84 @@
+<div class="headerProfile">
+    <div>
+        <img class="closeSesion" (click)="onClickCloseSesion()" src="../../../assets/back_arrow.png" alt="">
+    </div>
+
+
+
+    <div>
+        <!-- <ion-icon style="width: 7vw;height: 4.5vh;margin-top: -0.5vh;" name="create"></ion-icon> -->
+
+        <img style="width: 7vw;height: 3.5vh;margin-top: -0.5vh;" (click)="onClickEditProfile()" src="../../../assets/icon/edit.jpg" alt=" ">
+
+    </div>
+</div>
+
+<ion-content>
+
+    <form [formGroup]="editUser">
+
+        <div class="imgProfile">
+
+            <img src="../../../assets/icon/placeholderProfile.jpg" alt=" ">
+            <img (click)="onClickEditPhoto()" *ngIf="!editMode" class="iconEdit" src="../../../assets/icon/editIMG.png" alt="">
+            <!-- *ngIf="!editMode" -->
+        </div>
+
+
+
+        <div class="profileFields ">
+            <div class="inputField labelsForm " [ngClass]="{editInput: !editMode}">
+
+                <ion-label *ngIf="editMode">{{editUser.getRawValue().username}}</ion-label>
+                <ion-input formControlName="username" *ngIf="!editMode" [placeholder]="editUser.getRawValue().username"></ion-input>
+                <ion-label *ngIf="!users">Nombre</ion-label>
+
+
+            </div>
+            <!-- [ngClass]="{editInput: !editMode}" -->
+            <div class="inputField labelsForm " [ngClass]="{editInput: !editMode}">
+
+                <ion-label *ngIf="editMode">{{editUser.getRawValue().usermail}}</ion-label>
+                <ion-input formControlName="usermail" *ngIf="!editMode" [placeholder]="editUser.getRawValue().usermail"></ion-input>
+                <ion-label *ngIf="!users">Mail</ion-label>
+
+            </div>
+        </div>
+
+        <div style="margin-left: 3vh">
+            <div class="headerSlides">
+                <p>
+                    GARAGE
+                </p>
+            </div>
+
+            <div class="subheaderSlides">
+                <p>
+                    Mis coches
+                </p>
+            </div>
+        </div>
+        <div style="margin-left: 3vh">
+
+            <app-card-my-card (addCar)="addCar()" [garage]="garage"></app-card-my-card>
+
+        </div>
+
+
+        <div style="margin-left: 3vh">
+            <div class="headerSlides">
+                <p>
+                    Mis favoritos
+                </p>
+            </div>
+        </div>
+
+        <div style="margin-left: 3vh">
+
+            <app-card-slide [listFavs]="userFavs" [profileList]="profileList" [listCars]="userFavs"></app-card-slide>
+
+        </div>
+
+    </form>
+
+</ion-content>

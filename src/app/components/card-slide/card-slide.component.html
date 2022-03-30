@@ -1,26 +1,31 @@
 <ion-slides class="listSlidesCars" [options]="slideOpts">
-    <ion-slide *ngFor="let item of [1,2,3,4,5,6]">
+    <ion-slide *ngFor="let item of listCars">
         <ion-card>
             <div>
-                <img src="../../../assets/3Mtm48iVUy2crD1pKtAP 1.png" alt="">
+                <img class="controlImg" src="{{item.img}}" alt="">
             </div>
             <ion-card-content>
 
                 <div class="rowContentCard">
                     <div>
                         <p class="titleCardSlides">
-                            McLaren MP4-12C
+                            {{item.model}}
                         </p>
                     </div>
-                    <div>
-                        <img src="../../../assets/heart_icon.png" alt="">
+                    <div *ngIf="!profileList">
+                        <img *ngIf="!isFav(item)" (click)="onClickAddRemoveFav(item)" src="../../../assets/heart_icon.png" alt="">
+                        <img *ngIf="isFav(item)" (click)="onClickAddRemoveFav(item)" style="height: 2vh;" src="../../../assets/hhhhhhhhhhhh.png" alt="">
+                    </div>
+                    <div *ngIf="profileList">
+
+                        <img (click)="removeInsideFavs(item)" style="height: 2vh;" src="../../../assets/hhhhhhhhhhhh.png" alt="">
                     </div>
                 </div>
 
                 <div class="row2ContentCard">
                     <div>
                         <p class="titleCardSlidesPrice">
-                            60 000€
+                            {{item.price}}
                         </p>
                     </div>
 
@@ -28,7 +33,7 @@
 
                         <div>
                             <p class="nameProfileText">
-                                Makenna Vaccaro
+                                {{item.model}}
                             </p>
                         </div>
                         <div>
@@ -43,4 +48,29 @@
             </ion-card-content>
         </ion-card>
     </ion-slide>
+
+    <!-- Place Holder -->
+
+    <div *ngIf="profileList">
+
+
+        <ion-slide *ngIf="listFavs == undefined || listFavs.length == 0 ">
+            <ion-card>
+                <div>
+                    <img class="placeHolderImg" src="../../../assets/carPlaceHolder.png" alt="">
+                </div>
+                <ion-card-content>
+
+                    <div class="rowContentCard">
+                        <p class="titleCardSlides">
+                            Añade tus coches favoritos
+                        </p>
+                    </div>
+                </ion-card-content>
+            </ion-card>
+        </ion-slide>
+
+    </div>
+
+
 </ion-slides>

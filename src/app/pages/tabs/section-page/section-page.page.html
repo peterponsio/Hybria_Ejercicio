@@ -15,25 +15,25 @@
 
 </div>
 
-<img *ngIf="isPremiun" class="premiunAlertBanner" src="../../../../assets/Info snack.png" alt="">
+<img (click)="onClickSeeAdvantage()" *ngIf="isPremiun" class="premiunAlertBanner" src="../../../../assets/Info snack.png" alt="">
 
 <ion-content class="ion-no-padding">
 
     <ion-list>
 
-        <div *ngFor="let item of [1,2,3]" class="itemsLIstSegments">
+        <div (click)="onClickOpenDetail(item)" *ngFor="let item of listAccesories" class="itemsLIstSegments">
 
             <ion-grid fixed>
                 <ion-row>
                     <ion-col size="5">
-                        <img src="../../../../assets/lol 1.png" alt="">
+                        <img src="{{item.img}}" alt="">
                     </ion-col>
                     <ion-col size="7">
                         <div class="alingVerticalText">
 
-                            <p class="titleItem">CAMBIO DE ACEITE</p>
+                            <p class="titleItem">{{item.title}}</p>
 
-                            <p class="subtitleItem">Rebaja del 50% en tu proximo cambio de Aceite en uno de nuestros mecanicos.</p>
+                            <p class="subtitleItem">{{item.desc}}</p>
 
                         </div>
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataServiceService } from 'src/app/services/data-service.service';
 
 @Component({
   selector: 'app-search-page',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchPagePage implements OnInit {
 
-  constructor() { }
+  listCars: any[] = [];
+  filterText: string = "";
+
+  constructor(private data:DataServiceService) { }
 
   ngOnInit() {
   }
+
+  ionViewWillEnter() {
+    this.data.getCarList().subscribe((res)=>{
+      console.log(res);
+      this.listCars = res;
+    })
+  }
+
+  changeFilter(event : any){
+    console.log(event.detail.value);
+    this.filterText = event.detail.value;
+  }
+
 
 }

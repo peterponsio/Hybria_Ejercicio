@@ -10,9 +10,19 @@
 
 .logoLogin {
     margin-top: -1vh !important;
+    height: 15vw;
+    width: 14vw;
 }
 
 .actionSheetTop {
     display: flex !important;
     justify-content: flex-start !important;
+}
+
+.closeSesion {
+    height: 3vh
+}
+
+.dotsOptions {
+    height: 3vh;
 }

@@ -19,7 +19,10 @@
         "@angular/platform-browser": "~13.2.2",
         "@angular/platform-browser-dynamic": "~13.2.2",
         "@angular/router": "~13.2.2",
+        "@awesome-cordova-plugins/call-number": "^5.40.0",
         "@awesome-cordova-plugins/camera": "^5.40.0",
+        "@awesome-cordova-plugins/email-composer": "^5.40.0",
+        "@awesome-cordova-plugins/image-picker": "^5.40.0",
         "@awesome-cordova-plugins/keyboard": "^5.40.0",
         "@awesome-cordova-plugins/social-sharing": "^5.40.0",
         "@awesome-cordova-plugins/youtube-video-player": "^5.40.0",
@@ -33,9 +36,15 @@
         "@ionic/cordova-builders": "^6.1.0",
         "@ionic/storage": "^3.0.6",
         "@ionic/storage-angular": "^3.0.6",
+        "@mobiscroll/angular": "https://npm.mobiscroll.com/@mobiscroll/angular-trial/-/angular-trial-5.15.2.tgz",
+        "angular-in-memory-web-api": "^0.13.0",
+        "call-number": "^1.0.1",
         "cordova-android": "10.1.1",
         "cordova-plugin-camera": "^6.0.0",
+        "cordova-plugin-email-composer": "^0.10.0",
+        "cordova-plugin-telerik-imagepicker": "^2.3.6",
         "cordova-plugin-x-socialsharing": "^6.0.3",
+        "jetifier": "^2.0.0",
         "rxjs": "~6.6.0",
         "tslib": "^2.2.0",
         "zone.js": "~0.11.4"
@@ -58,6 +67,7 @@
         "@typescript-eslint/eslint-plugin": "5.3.0",
         "@typescript-eslint/parser": "5.3.0",
         "cordova-plugin-device": "2.0.2",
+        "cordova-plugin-image-picker": "^1.1.3",
         "cordova-plugin-ionic-keyboard": "^2.2.0",
         "cordova-plugin-ionic-webview": "^5.0.0",
         "cordova-plugin-splashscreen": "5.0.2",
@@ -85,7 +95,8 @@
             "cordova-plugin-device": {},
             "cordova-plugin-splashscreen": {},
             "cordova-plugin-ionic-webview": {},
-            "cordova-plugin-ionic-keyboard": {}
+            "cordova-plugin-ionic-keyboard": {},
+            "cordova-plugin-image-picker": {}
         },
         "platforms": [
             "android"

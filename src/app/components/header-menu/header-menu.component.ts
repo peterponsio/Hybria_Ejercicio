@@ -53,22 +53,15 @@ export class HeaderMenuComponent implements OnInit {
     });
 
     await actionSh.present();
-
-
-    //  const shareBtn: ActionSheetButton = 
-    //  {
-    //   text: "Compartir",
-    //   icon: "share-outline",
-    //   handler: () =>{
-    //     this.onShareNew();
-    //   }
-    // };
-
   }
 
   onShareNew(){
 
     this.socialSharing.share();
+  }
+
+  onClickProfile(){
+    this.navCtrl.navigateForward("profile");
   }
 
 }
